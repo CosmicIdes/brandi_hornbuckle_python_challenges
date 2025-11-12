@@ -37,8 +37,7 @@ reverse_string_without_spaces(user_long_string)
 user_list_to_be_reversed = input("Input a list separated by commas: \n")
 
 def reverse_list(user_list_to_be_reversed):
-    sanitized_user_list = [s.strip() for s in user_list_to_be_reversed.split(',')]
-    reversed_list = sanitized_user_list[::-1]
-    print(reversed_list)
+    sanitized_user_list = [s.strip() for s in user_list_to_be_reversed.split(',')][::-1]
+    print(sanitized_user_list)
 
 reverse_list(user_list_to_be_reversed)
